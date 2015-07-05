@@ -1,6 +1,10 @@
+//Written by Aaron Sedlacek
+//07/03/2015
+//Most of this code comes directly from "Rootkits" by Greg Hoglund and James Butler, with some minor tweaks
 #include <Windows.h>
 #include <stdio.h>
 
+//this function loads a driver into kernel space using SCM
 bool _util_load_sysfile(char * theDriverName)
 {
 	char aPath[1024];
@@ -71,10 +75,17 @@ bool _util_load_sysfile(char * theDriverName)
 
 int main(int argc, char * argv[]) {
 	
-	if (_util_load_sysfile(argv[1]) == true) {
-		printf("Driver Loaded Successfully!\n");
-		return 0;
+	if (argv[1]) {
+		//call the loader function
+		if (_util_load_sysfile(argv[1]) == true) {
+			printf("Driver Loaded Successfully!\n");
+			return 0;
+		}
+		printf("Driver load failed :-( \n");
+		return -1;
 	}
-	printf("Driver load failed :-( \n");
-	return -1;
+	else {
+		printf("Usage: driverLauncher.exe DriverName");
+		return -1;
+	}
 }
