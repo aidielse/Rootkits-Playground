@@ -7,6 +7,8 @@
 //this function loads a driver into kernel space using SCM
 bool _util_load_sysfile(char * theDriverName)
 {
+
+	SERVICE_STATUS ss;
 	char aPath[1024];
 	char aCurrentDirectory[515];
 	SC_HANDLE sh = OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS);
@@ -67,8 +69,13 @@ bool _util_load_sysfile(char * theDriverName)
 				return false;
 			}
 		}
-		CloseServiceHandle(sh);
+		printf("Press Enter to close service\r\n");
+		getchar();
+		ControlService(rh, SERVICE_CONTROL_STOP, &ss);
+
+		DeleteService(rh);
 		CloseServiceHandle(rh);
+		CloseServiceHandle(sh);
 	}
 	return true;
 }
@@ -77,12 +84,8 @@ int main(int argc, char * argv[]) {
 	
 	if (argv[1]) {
 		//call the loader function
-		if (_util_load_sysfile(argv[1]) == true) {
-			printf("Driver Loaded Successfully!\n");
-			return 0;
-		}
-		printf("Driver load failed :-( \n");
-		return -1;
+		_util_load_sysfile(argv[1]);
+		return 0;
 	}
 	else {
 		printf("Usage: driverLauncher.exe DriverName");
