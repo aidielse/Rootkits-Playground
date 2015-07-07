@@ -70,7 +70,7 @@
     <Import Project="$(VCTargetsPath)\WDKConversion\PreConfiguration.props" />
   </ImportGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{EBF4A2AD-FBFF-4EA2-A000-E4F2D26FDBB9}</ProjectGuid>
+    <ProjectGuid>{45F3514F-9F14-4F83-B67E-63CBF14E123F}</ProjectGuid>
     <RootNamespace>$(MSBuildProjectName)</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|Win32'">
@@ -196,7 +196,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Exclude="@(ClInclude)" Include="*.h;*.hpp;*.hxx;*.hm;*.inl;*.xsd" />
-    <ClInclude Include="hookidt.h" />
   </ItemGroup>
   <!-- /Necessary to pick up propper files from local directory when in the IDE-->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

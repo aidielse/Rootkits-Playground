@@ -1,14 +1,16 @@
-﻿Build started 7/7/2015 2:32:24 PM.
+﻿Build started 7/7/2015 4:57:20 PM.
      1>Project "C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Debug\x86\ /I.\inc /Zi /nologo /W3 /WX /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Win7Debug\x86\\" /Fd"Win7Debug\x86\vc120.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt  /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+  main.c
+         C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Debug\x86\ /I.\inc /Zi /nologo /W3 /WX /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Win7Debug\x86\\" /Fd"Win7Debug\x86\vc120.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt  /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+  hookidt.c main.c
+         hookidt.c
          main.c
+         Generating Code...
        Link:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"OBJ\x86\marine.sys" /VERSION:"6.3" /INCREMENTAL:NO /NOLOGO /WX /SECTION:"INIT,d" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\memcmp.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\BufferOverflowK.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\ntoskrnl.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\hal.lib" "C:\Program Files\Windows Kits\8.1\lib\win7\KM\x86\wmilib.lib" /NODEFAULTLIB /MANIFEST:NO /DEBUG /PDB:"OBJ\x86\marine.pdb" /SUBSYSTEM:NATIVE,"6.01" /Driver /OPT:REF /OPT:ICF /ENTRY:"GsDriverEntry@8" /RELEASE /IMPLIB:"OBJ\x86\marine.lib" /MERGE:"_TEXT=.text;_PAGE=PAGE" /MACHINE:X86 /PROFILE /kernel /IGNORE:4198,4010,4037,4039,4065,4070,4078,4087,4089,4221 /osversion:6.3 /pdbcompress /debugtype:pdata  Win7Debug\x86\main.obj
          Win7Debug\x86\hookidt.obj
          marine.vcxproj -> OBJ\x86\marine.sys
        DriverTestSign:
-         C:\Program Files\Windows Kits\8.1\bin\x86\signtool.exe sign /ph /sha1 "2A13FB84AF141EF503B883CB322682F70D6A93BB" 
+         C:\Program Files\Windows Kits\8.1\bin\x86\signtool.exe sign /ph /sha1 "6A5E17E4C2C86BC225CDA1DD2144BF8CD2DD02B6" 
          Done Adding Additional Store
          Successfully signed: OBJ\x86\marine.sys
          
@@ -16,4 +18,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.39
+Time Elapsed 00:00:01.48

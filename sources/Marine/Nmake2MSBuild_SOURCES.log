@@ -1,4 +1,4 @@
-Convert:	Verbose  : 7/7/2015 12:00:36 PM
+Convert:	Verbose  : 7/7/2015 4:56:00 PM
 ConvertFile:	Information  : Converting "C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\SOURCES"
 Parse      :	Verbose  : File contents after preprocessing:
                         	TARGETNAME=marine
@@ -18,7 +18,7 @@ PostProcessing                   :	Verbose  : Extracted property "ConfigurationT
 PostProcessing                   :	Verbose  : Extracted property "DriverType" with a value of "WDM" from sources.
 PostProcessing                   :	Verbose  : Extracted property "TARGETNAME" with a value of "marine" from sources.
 PostProcessing                   :	Verbose  : VcxProj file copied to "marine.vcxproj"
-PostProcessing                   :	Verbose  : Added Project GUID: {EBF4A2AD-FBFF-4EA2-A000-E4F2D26FDBB9}
+PostProcessing                   :	Verbose  : Added Project GUID: {45F3514F-9F14-4F83-B67E-63CBF14E123F}
 PostProcessing                   :	Information  : Generated Project File marine.vcxproj
 AddIDESupport                    :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
@@ -30,7 +30,7 @@ GetDependencyInformation        :	Verbose  : Processing the following list of pr
                                              	C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 AddPrerequisitesToSolution      :	Verbose  : Finding prerequisites for C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 GetPrerequisiteProjects         :	Verbose  : Scanning for prerequisites for project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
-EvaluateProject                 :	Verbose  : $(O) set to 117870c5-3f7c-485b-b021-b6561b259402
+EvaluateProject                 :	Verbose  : $(O) set to 96d4a743-f99e-4573-8635-f02671bb15e6
 ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type ClCompile
 ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type MessageCompile
 ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
@@ -40,7 +40,7 @@ ExtractIncludesFromItem   :	Verbose  : Extracting include elements from all item
 ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
 ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
-FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\117870c5-3f7c-485b-b021-b6561b259402
+FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\96d4a743-f99e-4573-8635-f02671bb15e6
 GetPrerequisiteProjects        :	Verbose  : No prerequisite projects found for project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 AddPrerequisitesToSolution     :	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj had no prerequisites, adding to solution
 GetDependencyInformation       :	Information  : The primary project collection does not contain any projects that depend on others.
@@ -49,20 +49,20 @@ CreatePackage                      :	Verbose  : Checking if any of the following
                                                 	 C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 CreatePackage                      :	Verbose  : Project marine.vcxproj will be packaged because it is a driver project
 CreatePackage                      :	Verbose  : Generating package project
-CreatePackage                      :	Verbose  : Adding reference to project ..\marine.vcxproj with project guid {EBF4A2AD-FBFF-4EA2-A000-E4F2D26FDBB9}
+CreatePackage                      :	Verbose  : Adding reference to project ..\marine.vcxproj with project guid {45F3514F-9F14-4F83-B67E-63CBF14E123F}
 CreatePackage                      :	Verbose  : Setting package project DebuggerFlavor to: DbgengKernelDebugger
 CreatePackage                      :	Information  : Generated Package Project file 'C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj'
 InitializeProjectsForSolution      :	Information  : Generating solution C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.sln from:
                                                     	    C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj
                                                     	    C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
-ExtractProjectGuid                 :	Verbose  :  GUID {FCD75A6F-B743-45D6-A45E-E1A59A937CDF} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj
-ExtractProjectGuid                 :	Verbose  :  GUID {EBF4A2AD-FBFF-4EA2-A000-E4F2D26FDBB9} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {62C22848-06DF-4AC5-88B5-806F24A38B08} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {45F3514F-9F14-4F83-B67E-63CBF14E123F} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj does not depend on others
 InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj does not depend on others
-WriteProjectEntries          :	Verbose  : Added project marine-Package to solution with a GUID of {FCD75A6F-B743-45D6-A45E-E1A59A937CDF}
-WriteProjectEntries          :	Verbose  : Added project marine to solution with a GUID of {EBF4A2AD-FBFF-4EA2-A000-E4F2D26FDBB9}
+WriteProjectEntries          :	Verbose  : Added project marine-Package to solution with a GUID of {62C22848-06DF-4AC5-88B5-806F24A38B08}
+WriteProjectEntries          :	Verbose  : Added project marine to solution with a GUID of {45F3514F-9F14-4F83-B67E-63CBF14E123F}
 WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine-Package\marine-Package.vcxproj
 WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj
 CreateSolutionIncludingDependencies:	Information  : Solution C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.sln was created successfully
 Convert                            :	Information  : ========== Project Conversion Finished: 1 Solution created with 2 Projects ==========
-Convert                            :	Verbose  : 7/7/2015 12:00:37 PM
+Convert                            :	Verbose  : 7/7/2015 4:56:01 PM

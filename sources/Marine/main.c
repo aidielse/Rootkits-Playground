@@ -46,6 +46,7 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING regPath
 	//set our unload function
 	DBG_TRACE("Driver Entry", "Establishing other DriverObject function pointers)");
 	(*pDriverObject).DriverUnload = unload;
+	//IDT hooking function
 	HookAllCPUS();
 	//set global, this global is referenced when specific driver functions are called.
 	DriverObjectRef = pDriverObject;
