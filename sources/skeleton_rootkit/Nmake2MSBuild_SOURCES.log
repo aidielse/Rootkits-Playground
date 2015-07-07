@@ -1,0 +1,68 @@
+Convert:	Verbose  : 7/6/2015 10:18:31 PM
+ConvertFile:	Information  : Converting "C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\SOURCES"
+Parse      :	Verbose  : File contents after preprocessing:
+                        	TARGETNAME=skeleton_rootkit
+                        	TARGETPATH=OBJ
+                        	TARGETTYPE=DRIVER
+                        	SOURCES=main.c
+                        	INCLUDES=.\inc
+ParseIfApplies:	Verbose  : "TARGETNAME=skeleton_rootkit" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "TARGETPATH=OBJ" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "TARGETTYPE=DRIVER" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "SOURCES=main.c" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "INCLUDES=.\inc" was parsed as a"MacroDefinition"
+GenerateMsBuildFile:	Information  : Generated file "C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\SOURCES.props"
+IsPropertyElementSetConditionally:	Verbose  : Property DriverType is set conditionally. Immediate condition ="'$(PlatformToolset)'=='WindowsApplicationForDrivers8.1'". Conditional parent element = Microsoft.Build.Construction.ProjectPropertyGroupElement
+PostProcessing                   :	Verbose  : Extracted property "PlatformToolset" with a value of "WindowsKernelModeDriver8.1" from sources.
+PostProcessing                   :	Verbose  : Extracted property "ConfigurationType" with a value of "Driver" from sources.
+PostProcessing                   :	Verbose  : Extracted property "DriverType" with a value of "WDM" from sources.
+PostProcessing                   :	Verbose  : Extracted property "TARGETNAME" with a value of "skeleton_rootkit" from sources.
+PostProcessing                   :	Verbose  : VcxProj file copied to "skeleton_rootkit.vcxproj"
+PostProcessing                   :	Verbose  : Added Project GUID: {F8F7E222-ADB9-411B-BC0E-B0D6028B7417}
+PostProcessing                   :	Information  : Generated Project File skeleton_rootkit.vcxproj
+AddIDESupport                    :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
+CheckForWellKnownTargetMacros:	Verbose  : Attempting to find and convert nmake target macros to well-known MSBuild items, as appropriate.
+AddIDESupport                :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+AddOverrideConditionsToProperies:	Verbose  : Appended override conditions to properties in file 'C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\SOURCES.props' and its imports
+GetDependencyInformation        :	Information  : Checking for external project dependencies
+GetDependencyInformation        :	Verbose  : Processing the following list of primary projects
+                                             	C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+AddPrerequisitesToSolution      :	Verbose  : Finding prerequisites for C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+GetPrerequisiteProjects         :	Verbose  : Scanning for prerequisites for project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+EvaluateProject                 :	Verbose  : $(O) set to ae639279-c35a-4c6e-96be-efc34630bb6b
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type ClCompile
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type MessageCompile
+ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type Midl
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type Midl in project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+ExtractIncludesFromItem   :	Verbose  : Extracting include elements from all items of type ResourceCompile
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
+ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
+FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\ae639279-c35a-4c6e-96be-efc34630bb6b
+GetPrerequisiteProjects        :	Verbose  : No prerequisite projects found for project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+AddPrerequisitesToSolution     :	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj had no prerequisites, adding to solution
+GetDependencyInformation       :	Information  : The primary project collection does not contain any projects that depend on others.
+CreateSolutionIncludingDependencies:	Verbose  : Attempting to generate solution file C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.sln from projects list
+CreatePackage                      :	Verbose  : Checking if any of the following projects should be packaged
+                                                	 C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+CreatePackage                      :	Verbose  : Project skeleton_rootkit.vcxproj will be packaged because it is a driver project
+CreatePackage                      :	Verbose  : Generating package project
+CreatePackage                      :	Verbose  : Adding reference to project ..\skeleton_rootkit.vcxproj with project guid {F8F7E222-ADB9-411B-BC0E-B0D6028B7417}
+CreatePackage                      :	Verbose  : Setting package project DebuggerFlavor to: DbgengKernelDebugger
+CreatePackage                      :	Information  : Generated Package Project file 'C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit-Package\skeleton_rootkit-Package.vcxproj'
+InitializeProjectsForSolution      :	Information  : Generating solution C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.sln from:
+                                                    	    C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit-Package\skeleton_rootkit-Package.vcxproj
+                                                    	    C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {4EB75CE1-DFFE-4F42-A54A-08E1BC008053} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit-Package\skeleton_rootkit-Package.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {F8F7E222-ADB9-411B-BC0E-B0D6028B7417} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit-Package\skeleton_rootkit-Package.vcxproj does not depend on others
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj does not depend on others
+WriteProjectEntries          :	Verbose  : Added project skeleton_rootkit-Package to solution with a GUID of {4EB75CE1-DFFE-4F42-A54A-08E1BC008053}
+WriteProjectEntries          :	Verbose  : Added project skeleton_rootkit to solution with a GUID of {F8F7E222-ADB9-411B-BC0E-B0D6028B7417}
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit-Package\skeleton_rootkit-Package.vcxproj
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.vcxproj
+CreateSolutionIncludingDependencies:	Information  : Solution C:\Users\alex\Desktop\Rootkits-Playground\sources\skeleton_rootkit\skeleton_rootkit.sln was created successfully
+Convert                            :	Information  : ========== Project Conversion Finished: 1 Solution created with 2 Projects ==========
+Convert                            :	Verbose  : 7/6/2015 10:18:32 PM

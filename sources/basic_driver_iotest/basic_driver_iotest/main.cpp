@@ -6,7 +6,7 @@ int _cdecl main(void)
 	HANDLE hFile;
 	DWORD dwReturn;
 	//createfile IRP, gets a handle to the driver
-	hFile = CreateFile("\\\\.\\Example",
+	hFile = CreateFile("\\\\.\\helloworld3",
 		GENERIC_READ | GENERIC_WRITE, 0, NULL,
 		OPEN_EXISTING, 0, NULL);
 

@@ -1,16 +1,16 @@
 //Written by Aaron Sedlacek
 //07/03/2015
-//Most of this code comes directly from "Rootkits" by Greg Hoglund and James Butler, with some minor tweaks
+//This program loads a driver into the kernel, and then unloads it later.
 #include <Windows.h>
 #include <stdio.h>
 
-//this function loads a driver into kernel space using SCM
+//This code mostly comes from Greg Hoglund's and James Butler's 'Rootkits' book.
 bool _util_load_sysfile(char * theDriverName)
 {
-
 	SERVICE_STATUS ss;
 	char aPath[1024];
 	char aCurrentDirectory[515];
+	//get handle to SCM database
 	SC_HANDLE sh = OpenSCManager(NULL, NULL, SC_MANAGER_ALL_ACCESS);
 
 	if (!sh)
@@ -23,7 +23,7 @@ bool _util_load_sysfile(char * theDriverName)
 	_snprintf_s(aPath, 1022, "%s\\%s.sys", aCurrentDirectory, theDriverName);
 
 	printf("loading %s\n", aPath);
-
+	//create our driver as a service
 	SC_HANDLE rh = CreateService(sh,
 		theDriverName,
 		theDriverName,
@@ -59,6 +59,7 @@ bool _util_load_sysfile(char * theDriverName)
 	}
 	if (rh)
 	{
+		//start the service
 		if (0 == StartService(rh, 0, NULL))
 		{
 			if (ERROR_SERVICE_ALREADY_RUNNING == GetLastError()){}
@@ -71,9 +72,11 @@ bool _util_load_sysfile(char * theDriverName)
 		}
 		printf("Press Enter to close service\r\n");
 		getchar();
+		//stop the service
 		ControlService(rh, SERVICE_CONTROL_STOP, &ss);
-
+		//remove the service from the kernel
 		DeleteService(rh);
+		//close our handles
 		CloseServiceHandle(rh);
 		CloseServiceHandle(sh);
 	}
@@ -81,7 +84,7 @@ bool _util_load_sysfile(char * theDriverName)
 }
 
 int main(int argc, char * argv[]) {
-	
+
 	if (argv[1]) {
 		//call the loader function
 		_util_load_sysfile(argv[1]);
