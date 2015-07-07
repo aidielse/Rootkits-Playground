@@ -30,4 +30,9 @@ binaries:
 		driverLauncher was extended and refined from hello_world. 
 		driverLauncher can now be used to load drivers/rootkits into the kernel and then unload them as needed.
 
+	Marine:
+
+		INT 0x2E Hooking rootkit that doesn't do anything particularly malicious. 
+		Keep in mind INT 0x2E has was deprecated when Windows XP came out.
+
 TODO: Add more documentation!
