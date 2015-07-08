@@ -1,7 +1,7 @@
 //Most of this code belongs to Reverend Bill Blunden.
 //It comes from his book: 'The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System' First Edition
-//some modifications were mady by Aaron Sedlacek
-//Written 07/06/2015
+//some modifications were made by Aaron Sedlacek
+//Written 07/07/2015
 #include "ntddk.h"
 #include "debug.h"
 #include "hookidt.h"

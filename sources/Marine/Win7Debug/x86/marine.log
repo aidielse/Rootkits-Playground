@@ -1,4 +1,4 @@
-﻿Build started 7/7/2015 4:57:20 PM.
+﻿Build started 7/7/2015 5:39:20 PM.
      1>Project "C:\Users\alex\Desktop\Rootkits-Playground\sources\Marine\marine.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IWin7Debug\x86\ /I.\inc /Zi /nologo /W3 /WX /Od /Oi /Oy- /D _X86_=1 /D i386=1 /D STD_CALL /D DEPRECATE_DDK_FUNCTIONS=1 /D MSC_NOOPT /D _WIN32_WINNT=0x0601 /D WINVER=0x0601 /D WINNT=1 /D NTDDI_VERSION=0x06010000 /D DBG=1 /GF /Gm- /Zp8 /GS /Gy /fp:precise /Zc:wchar_t- /Zc:forScope- /GR- /Fo"Win7Debug\x86\\" /Fd"Win7Debug\x86\vc120.pdb" /Gz /wd4748 /wd4603 /wd4627 /wd4986 /wd4987 /wd4996 /FI"C:\Program Files\Windows Kits\8.1\Include\Shared\warning.h" /analyze- /errorReport:prompt  /kernel -cbstring /d1import_no_registry /d2AllowCompatibleILVersions /d2Zi+  hookidt.c main.c
@@ -18,4 +18,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.48
+Time Elapsed 00:00:00.49
