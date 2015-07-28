@@ -1,66 +1,66 @@
-Convert:	Verbose  : 7/28/2015 10:31:35 AM
-ConvertFile:	Information  : Converting "C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\SOURCES"
+Convert:	Verbose  : 7/28/2015 2:21:58 PM
+ConvertFile:	Information  : Converting "C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\SOURCES"
 Parse      :	Verbose  : File contents after preprocessing:
-                        	TARGETNAME=NOFU
+                        	TARGETNAME=MYFU
                         	TARGETTYPE=DRIVER
                         	SOURCES=main.c
                         	INCLUDES=.\inc
-ParseIfApplies:	Verbose  : "TARGETNAME=NOFU" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "TARGETNAME=MYFU" was parsed as a"MacroDefinition"
 ParseIfApplies:	Verbose  : "TARGETTYPE=DRIVER" was parsed as a"MacroDefinition"
 ParseIfApplies:	Verbose  : "SOURCES=main.c" was parsed as a"MacroDefinition"
 ParseIfApplies:	Verbose  : "INCLUDES=.\inc" was parsed as a"MacroDefinition"
-GenerateMsBuildFile:	Information  : Generated file "C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\SOURCES.props"
+GenerateMsBuildFile:	Information  : Generated file "C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\SOURCES.props"
 IsPropertyElementSetConditionally:	Verbose  : Property DriverType is set conditionally. Immediate condition ="'$(PlatformToolset)'=='WindowsApplicationForDrivers8.1'". Conditional parent element = Microsoft.Build.Construction.ProjectPropertyGroupElement
 PostProcessing                   :	Verbose  : Extracted property "PlatformToolset" with a value of "WindowsKernelModeDriver8.1" from sources.
 PostProcessing                   :	Verbose  : Extracted property "ConfigurationType" with a value of "Driver" from sources.
 PostProcessing                   :	Verbose  : Extracted property "DriverType" with a value of "WDM" from sources.
-PostProcessing                   :	Verbose  : Extracted property "TARGETNAME" with a value of "NOFU" from sources.
-PostProcessing                   :	Verbose  : VcxProj file copied to "NOFU.vcxproj"
-PostProcessing                   :	Verbose  : Added Project GUID: {242DC189-EC14-4312-8DD6-6C30D4FD0E73}
-PostProcessing                   :	Information  : Generated Project File NOFU.vcxproj
-AddIDESupport                    :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
+PostProcessing                   :	Verbose  : Extracted property "TARGETNAME" with a value of "MYFU" from sources.
+PostProcessing                   :	Verbose  : VcxProj file copied to "MYFU.vcxproj"
+PostProcessing                   :	Verbose  : Added Project GUID: {41F5FD7A-CCE0-42EE-9B38-7104BEB5078F}
+PostProcessing                   :	Information  : Generated Project File MYFU.vcxproj
+AddIDESupport                    :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
 CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
 CheckForWellKnownTargetMacros:	Verbose  : Attempting to find and convert nmake target macros to well-known MSBuild items, as appropriate.
-AddIDESupport                :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-AddOverrideConditionsToProperies:	Verbose  : Appended override conditions to properties in file 'C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\SOURCES.props' and its imports
+AddIDESupport                :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+AddOverrideConditionsToProperies:	Verbose  : Appended override conditions to properties in file 'C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\SOURCES.props' and its imports
 GetDependencyInformation        :	Information  : Checking for external project dependencies
 GetDependencyInformation        :	Verbose  : Processing the following list of primary projects
-                                             	C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-AddPrerequisitesToSolution      :	Verbose  : Finding prerequisites for C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-GetPrerequisiteProjects         :	Verbose  : Scanning for prerequisites for project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-EvaluateProject                 :	Verbose  : $(O) set to 5bffe708-fa23-4cee-a03b-1e0a52b16a18
+                                             	C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+AddPrerequisitesToSolution      :	Verbose  : Finding prerequisites for C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+GetPrerequisiteProjects         :	Verbose  : Scanning for prerequisites for project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+EvaluateProject                 :	Verbose  : $(O) set to ddf12030-95fc-4a32-931c-c9855a9884e9
 ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type ClCompile
 ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type MessageCompile
-ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
+ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
 ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type Midl
-ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type Midl in project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type Midl in project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
 ExtractIncludesFromItem   :	Verbose  : Extracting include elements from all items of type ResourceCompile
-ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
 ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
 ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
-FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\5bffe708-fa23-4cee-a03b-1e0a52b16a18
-GetPrerequisiteProjects        :	Verbose  : No prerequisite projects found for project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-AddPrerequisitesToSolution     :	Verbose  : Project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj had no prerequisites, adding to solution
+FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\ddf12030-95fc-4a32-931c-c9855a9884e9
+GetPrerequisiteProjects        :	Verbose  : No prerequisite projects found for project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+AddPrerequisitesToSolution     :	Verbose  : Project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj had no prerequisites, adding to solution
 GetDependencyInformation       :	Information  : The primary project collection does not contain any projects that depend on others.
-CreateSolutionIncludingDependencies:	Verbose  : Attempting to generate solution file C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.sln from projects list
+CreateSolutionIncludingDependencies:	Verbose  : Attempting to generate solution file C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.sln from projects list
 CreatePackage                      :	Verbose  : Checking if any of the following projects should be packaged
-                                                	 C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-CreatePackage                      :	Verbose  : Project NOFU.vcxproj will be packaged because it is a driver project
+                                                	 C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+CreatePackage                      :	Verbose  : Project MYFU.vcxproj will be packaged because it is a driver project
 CreatePackage                      :	Verbose  : Generating package project
-CreatePackage                      :	Verbose  : Adding reference to project ..\NOFU.vcxproj with project guid {242DC189-EC14-4312-8DD6-6C30D4FD0E73}
+CreatePackage                      :	Verbose  : Adding reference to project ..\MYFU.vcxproj with project guid {41F5FD7A-CCE0-42EE-9B38-7104BEB5078F}
 CreatePackage                      :	Verbose  : Setting package project DebuggerFlavor to: DbgengKernelDebugger
-CreatePackage                      :	Information  : Generated Package Project file 'C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU-Package\NOFU-Package.vcxproj'
-InitializeProjectsForSolution      :	Information  : Generating solution C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.sln from:
-                                                    	    C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU-Package\NOFU-Package.vcxproj
-                                                    	    C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-ExtractProjectGuid                 :	Verbose  :  GUID {8516DBB8-0EDC-4DEF-AC25-723297F46280} was extracted from project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU-Package\NOFU-Package.vcxproj
-ExtractProjectGuid                 :	Verbose  :  GUID {242DC189-EC14-4312-8DD6-6C30D4FD0E73} was extracted from project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU-Package\NOFU-Package.vcxproj does not depend on others
-InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj does not depend on others
-WriteProjectEntries          :	Verbose  : Added project NOFU-Package to solution with a GUID of {8516DBB8-0EDC-4DEF-AC25-723297F46280}
-WriteProjectEntries          :	Verbose  : Added project NOFU to solution with a GUID of {242DC189-EC14-4312-8DD6-6C30D4FD0E73}
-WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU-Package\NOFU-Package.vcxproj
-WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.vcxproj
-CreateSolutionIncludingDependencies:	Information  : Solution C:\Users\alex\Documents\Visual Studio 2013\Projects\MYFU\NOFU.sln was created successfully
+CreatePackage                      :	Information  : Generated Package Project file 'C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU-Package\MYFU-Package.vcxproj'
+InitializeProjectsForSolution      :	Information  : Generating solution C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.sln from:
+                                                    	    C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU-Package\MYFU-Package.vcxproj
+                                                    	    C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {7297D2A0-A61A-4E46-AE75-88C739960766} was extracted from project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU-Package\MYFU-Package.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {41F5FD7A-CCE0-42EE-9B38-7104BEB5078F} was extracted from project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU-Package\MYFU-Package.vcxproj does not depend on others
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj does not depend on others
+WriteProjectEntries          :	Verbose  : Added project MYFU-Package to solution with a GUID of {7297D2A0-A61A-4E46-AE75-88C739960766}
+WriteProjectEntries          :	Verbose  : Added project MYFU to solution with a GUID of {41F5FD7A-CCE0-42EE-9B38-7104BEB5078F}
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU-Package\MYFU-Package.vcxproj
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.vcxproj
+CreateSolutionIncludingDependencies:	Information  : Solution C:\Users\alex\Documents\GitHub\Rootkits-Playground\MYFU\MYFU.sln was created successfully
 Convert                            :	Information  : ========== Project Conversion Finished: 1 Solution created with 2 Projects ==========
-Convert                            :	Verbose  : 7/28/2015 10:31:36 AM
+Convert                            :	Verbose  : 7/28/2015 2:21:59 PM

