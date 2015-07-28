@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="@(ClSourceFiles)" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{f1287f6a-cf47-46ae-b764-249df06a3a62}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="INC\datatypes.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\debug.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\devices.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\ioctl_defs.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\kmd.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\module.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\task.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\token.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="INC\ver.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

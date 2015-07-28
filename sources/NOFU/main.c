@@ -1,7 +1,7 @@
 //Most of this code belongs to Reverend Bill Blunden.
 //It comes from his book: 'The Rootkit Arsenal: Escape and Evasion in the Dark Corners of the System' First Edition
 //some modifications were mady by Aaron Sedlacek
-//Written 07/05/2015
+//Written 07/28/2015
 #include "ntddk.h"
 #include "ioctl_defs.h"
 #include "devices.h"
@@ -11,6 +11,7 @@
 //Globals
 PDEVICE_OBJECT MSNetDiagDeviceObject;
 PDRIVER_OBJECT DriverObjectRef;
+
 //KMD-specific includes
 #include "ver.h"
 #include "kmd.h"

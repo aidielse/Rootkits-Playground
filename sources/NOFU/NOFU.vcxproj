@@ -164,10 +164,11 @@
   <PropertyGroup Label="UserMacros" />
   <!-- The WrappedTaskItems label is used by the conversion tool to identify the location where items 
         associated with wrapped tasks will reside.-->
-  <ItemGroup Label="WrappedTaskItems" />
+  <ItemGroup Label="WrappedTaskItems">
+    <Text Include="Nmake2MSBuild_SOURCES.log" />
+  </ItemGroup>
   <ItemGroup>
     <!-- We only add items (e.g. form ClSourceFiles) that do not already exist (e.g in the ClCompile list), this avoids duplication -->
-    <ClCompile Include="@(ClSourceFiles)" Exclude="@(ClCompile)" />
     <ResourceCompile Include="@(RcSourceFiles)" Exclude="@(ResourceCompile)" />
     <Midl Include="@(IdlSourceFiles)" Exclude="@(Midl)" />
     <MessageCompile Include="@(McSourceFiles)" Exclude="@(MessageCompile)" />
@@ -192,18 +193,24 @@
     <None Exclude="@(None)" Include="*.txt;*.htm;*.html" />
     <None Exclude="@(None)" Include="*.ico;*.cur;*.bmp;*.dlg;*.rct;*.gif;*.jpg;*.jpeg;*.wav;*.jpe;*.tiff;*.tif;*.png;*.rc2" />
     <None Exclude="@(None)" Include="*.def;*.bat;*.hpj;*.asmx" />
+    <None Include="ClassDiagram.cd" />
+    <None Include="MAKEFILE" />
+    <None Include="SOURCES" />
+    <None Include="SOURCES.props" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="datatypes.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="devices.h" />
+    <ClInclude Include="ioctl_defs.h" />
     <ClInclude Include="kmd.h" />
     <ClInclude Include="module.h" />
     <ClInclude Include="task.h" />
     <ClInclude Include="token.h" />
-    <ClInclude Exclude="@(ClInclude)" Include="ver.h" />
-    <ClInclude Include="datatypes.h" />
-    <ClInclude Include="debug.h" />
-    <ClInclude Include="devices.h" />
-    <ClInclude Include="Header.h" />
-    <ClInclude Include="ioctl_defs.h" />
+    <ClInclude Include="ver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <!-- /Necessary to pick up propper files from local directory when in the IDE-->
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

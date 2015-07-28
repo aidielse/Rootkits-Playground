@@ -1,9 +1,3 @@
-#define EPROCESS_OFFSET_TOKEN Offsets.Token
-#define TOKEN_OFFSET_SIDCOUNT Offsets.nSIDs
-#define TOKEN_OFFSET_PRIV Offsets.PrivPresent
-#define TOKEN_OFFSET_ENABLED Offsets.PrivEnabled
-#define TOKEN_OFFSET_DEFAULT Offsets.PrivDefaultEnabled
-
 void processToken(BYTE * currentPEP)
 {
 	UCHAR *token_address;

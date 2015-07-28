@@ -1,17 +1,3 @@
-#define OFFSET_DRIVERSECTION Offsets.DriverSection
-
-typedef struct _DRIVER_SECTION
-{
-	LIST_ENTRY listEntry;
-	DWORD fieldl[4];
-	DWORD field2;
-	DWORD field3;
-	DWORD field4;
-	UNICODE_STRING filePath;
-	UNICODE_STRING fileName;
-	//...and who knows what else
-}DRIVER_SECTION, *PDRIVER_SECTION;
-
 DRIVER_SECTION * getCurrentDriverSection()
 {
 	BYTE * object;

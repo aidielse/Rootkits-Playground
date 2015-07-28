@@ -1,0 +1,66 @@
+Convert:	Verbose  : 7/28/2015 10:01:47 AM
+ConvertFile:	Information  : Converting "C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\SOURCES"
+Parse      :	Verbose  : File contents after preprocessing:
+                        	TARGETNAME=WOFU
+                        	TARGETTYPE=DRIVER
+                        	SOURCES=main.c
+                        	INCLUDES=.\inc
+ParseIfApplies:	Verbose  : "TARGETNAME=WOFU" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "TARGETTYPE=DRIVER" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "SOURCES=main.c" was parsed as a"MacroDefinition"
+ParseIfApplies:	Verbose  : "INCLUDES=.\inc" was parsed as a"MacroDefinition"
+GenerateMsBuildFile:	Information  : Generated file "C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\SOURCES.props"
+IsPropertyElementSetConditionally:	Verbose  : Property DriverType is set conditionally. Immediate condition ="'$(PlatformToolset)'=='WindowsApplicationForDrivers8.1'". Conditional parent element = Microsoft.Build.Construction.ProjectPropertyGroupElement
+PostProcessing                   :	Verbose  : Extracted property "PlatformToolset" with a value of "WindowsKernelModeDriver8.1" from sources.
+PostProcessing                   :	Verbose  : Extracted property "ConfigurationType" with a value of "Driver" from sources.
+PostProcessing                   :	Verbose  : Extracted property "DriverType" with a value of "WDM" from sources.
+PostProcessing                   :	Verbose  : Extracted property "TARGETNAME" with a value of "WOFU" from sources.
+PostProcessing                   :	Verbose  : VcxProj file copied to "WOFU.vcxproj"
+PostProcessing                   :	Verbose  : Added Project GUID: {E1D80B65-895A-4467-9B1C-1EC8EE10190D}
+PostProcessing                   :	Information  : Generated Project File WOFU.vcxproj
+AddIDESupport                    :	Verbose  : Attempting to add propery page support for converted targets and macros in project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+CheckForWellKnownTargets         :	Verbose  : Attempting to find and convert nmake targets to well-known MSBuild items, as appropriate.
+CheckForWellKnownTargetMacros:	Verbose  : Attempting to find and convert nmake target macros to well-known MSBuild items, as appropriate.
+AddIDESupport                :	Verbose  : Finished adding propery page support for converted targets and macros, changes saved to C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+AddOverrideConditionsToProperies:	Verbose  : Appended override conditions to properties in file 'C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\SOURCES.props' and its imports
+GetDependencyInformation        :	Information  : Checking for external project dependencies
+GetDependencyInformation        :	Verbose  : Processing the following list of primary projects
+                                             	C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+AddPrerequisitesToSolution      :	Verbose  : Finding prerequisites for C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+GetPrerequisiteProjects         :	Verbose  : Scanning for prerequisites for project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+EvaluateProject                 :	Verbose  : $(O) set to 8c990215-3d56-493e-8d95-fdaebbc8c6ae
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type ClCompile
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type MessageCompile
+ExtractIncludesFromItem         :	Verbose  : Didn't find any items of type MessageCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+ExtractIncludesFromItem         :	Verbose  : Extracting include elements from all items of type Midl
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type Midl in project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+ExtractIncludesFromItem   :	Verbose  : Extracting include elements from all items of type ResourceCompile
+ExtractIncludesFromItem   :	Verbose  : Didn't find any items of type ResourceCompile in project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalDependencies on item type Link, using splitter ;
+ExtractIncludesFromItemMetadata:	Verbose  : Extracting include elements from metadata AdditionalIncludeDirectories on item type ClCompile, using splitter ;
+FindPreReqProjectsInReferences :	Verbose  : Ignoring following path since it references the project's own $(O) C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\8c990215-3d56-493e-8d95-fdaebbc8c6ae
+GetPrerequisiteProjects        :	Verbose  : No prerequisite projects found for project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+AddPrerequisitesToSolution     :	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj had no prerequisites, adding to solution
+GetDependencyInformation       :	Information  : The primary project collection does not contain any projects that depend on others.
+CreateSolutionIncludingDependencies:	Verbose  : Attempting to generate solution file C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.sln from projects list
+CreatePackage                      :	Verbose  : Checking if any of the following projects should be packaged
+                                                	 C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+CreatePackage                      :	Verbose  : Project WOFU.vcxproj will be packaged because it is a driver project
+CreatePackage                      :	Verbose  : Generating package project
+CreatePackage                      :	Verbose  : Adding reference to project ..\WOFU.vcxproj with project guid {E1D80B65-895A-4467-9B1C-1EC8EE10190D}
+CreatePackage                      :	Verbose  : Setting package project DebuggerFlavor to: DbgengKernelDebugger
+CreatePackage                      :	Information  : Generated Package Project file 'C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU-Package\WOFU-Package.vcxproj'
+InitializeProjectsForSolution      :	Information  : Generating solution C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.sln from:
+                                                    	    C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU-Package\WOFU-Package.vcxproj
+                                                    	    C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {10ADC3EE-759D-44D0-91AF-C9D36CBD1EE2} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU-Package\WOFU-Package.vcxproj
+ExtractProjectGuid                 :	Verbose  :  GUID {E1D80B65-895A-4467-9B1C-1EC8EE10190D} was extracted from project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU-Package\WOFU-Package.vcxproj does not depend on others
+InitializeProjectsForSolution:	Verbose  : Project C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj does not depend on others
+WriteProjectEntries          :	Verbose  : Added project WOFU-Package to solution with a GUID of {10ADC3EE-759D-44D0-91AF-C9D36CBD1EE2}
+WriteProjectEntries          :	Verbose  : Added project WOFU to solution with a GUID of {E1D80B65-895A-4467-9B1C-1EC8EE10190D}
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU-Package\WOFU-Package.vcxproj
+WriteProjectConfigurations   :	Verbose  : Writing project configurations for C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.vcxproj
+CreateSolutionIncludingDependencies:	Information  : Solution C:\Users\alex\Desktop\Rootkits-Playground\sources\WOFU\WOFU.sln was created successfully
+Convert                            :	Information  : ========== Project Conversion Finished: 1 Solution created with 2 Projects ==========
+Convert                            :	Verbose  : 7/28/2015 10:01:47 AM

@@ -1,4 +1,4 @@
-﻿Build started 7/28/2015 12:35:31 AM.
+﻿Build started 7/28/2015 9:28:46 AM.
      1>Project "C:\Users\alex\Desktop\Rootkits-Playground\sources\NOFU\NOFU-Package\NOFU-Package.vcxproj" on node 2 (Build target(s)).
      1>Inf2Cat:
          Inf2Cat task was skipped as there were no inf files to process
@@ -7,4 +7,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:00.06
+Time Elapsed 00:00:00.09

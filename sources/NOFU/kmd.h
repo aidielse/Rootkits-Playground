@@ -1,6 +1,4 @@
-DWORD LockAcquired;
-DWORD nCPUsLocked;
-
+//This function raises the IRQL to DISPATCH_LEVEL and returns the previous IRQL
 KIRQL RaiseIRQL()
 {
 	KIRQL curr;
@@ -17,6 +15,7 @@ KIRQL RaiseIRQL()
 void lockRoutine(IN PKDPC dpc, IN PVOID context, IN PVOID arg1, IN PVOID arg2)
 {
 	DBG_PRINT2(" [lockRoutine]: begin-CPU[%u]", KeGetCurrentProcessorNumber());
+	//increment locked cpu's
 	InterlockedIncrement(&nCPUsLocked);
 	//spin until LockAcquired flag is set(Le., by ReleaseLockO
 	while (InterlockedCompareExchange(&LockAcquired, 1, 1) == 8)
@@ -25,6 +24,7 @@ void lockRoutine(IN PKDPC dpc, IN PVOID context, IN PVOID arg1, IN PVOID arg2)
 			nop;
 		}
 	}
+	//decrement locked spu's
 	InterlockedDecrement(&nCPUsLocked);
 	DBG_PRINT2("[lockRoutine]: end-CPU[%u]", KeGetCurrentProcessorNumber());
 	return;
@@ -38,7 +38,7 @@ PKDPC AcquireLock()
 	DWORD nOtherCPUs;
 
 	ULONG KeNumberProcessors = KeQueryActiveProcessorCount(NULL);
-	// this should be taken care of by RaiseIRQL()
+	//this should be taken care of by RaiseIRQL()
 	if (KeGetCurrentIrql() != DISPATCH_LEVEL){ return(NULL); }
 	DBG_TRACE("AcquireLock", "Executing at IRQL==DISPATCH_LEVEL");
 
@@ -55,7 +55,7 @@ PKDPC AcquireLock()
 	if (dpcArray == NULL){ return(NULL); }
 	cpuID = KeGetCurrentProcessorNumber();
 	DBG_PRINT2(" [AcquireLock]: cpuID=%u\n", cpuID);
-	// create a DPC object for each CPU and insert into DPC queue
+	//create a DPC object for each CPU and insert into DPC queue
 	for (i = 0; i < KeNumberProcessors; i++)
 	{
 		PKDPC dpcPtr = &(dpcArray[i]);
